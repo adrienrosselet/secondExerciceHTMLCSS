@@ -1,0 +1,117 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #aaa;
+  /*width: 1920px;*/
+  margin: 0 auto;
+}
+.header{
+  padding: 40px;
+
+  background-image: url(../img/background-cervin.jpg);
+  background-size: cover;
+  height: 1025px;
+
+}
+.header-div{
+  width: 85%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.link-logo{
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  /*vertical-align: middle;*/
+}
+.img-logo{
+  vertical-align: middle;
+}
+.header-nav{
+  /* float: right; */
+
+}
+.header-nav-a{
+  text-decoration: none;
+  margin: 0 15px;
+  color: #fff;
+}
+.header-nav-a:hover{
+  color: #bbb;
+}
+.search-logo{
+  margin: 0px 13px;
+}
+.header-arrow{
+  text-decoration: none;
+  color: #bbb;
+  font-size: 70px;
+}
+.header-center{
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-center-text{
+  width: 600px;
+  height: 280px;
+  color: #fff;
+  text-align: center;
+}
+p{
+  font-size: 14px;
+  margin-bottom: 50px
+}
+h2{
+  font-size: 35px;
+  font-weight: normal;
+  margin: 5px;
+}
+h1{
+  font-size: 43px;
+  margin: 5px;
+}
+.center-button{
+  text-transform: uppercase;
+  padding: 25px 45px;
+  background-color: #baa;
+  color: #eee;
+  border-radius: 5px;
+  border: 0px;
+}
+.center-button:hover{
+  background-color: #cbb;
+}
+.form-radio{
+  text-align: center;
+}
+
+.radio-button{
+
+}
+.nav-down{
+  width: 100%;
+  height: 20px;
+  text-align: center;
+}
+.nav-button{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 5px;
+  opacity: 0.5;
+  box-sizing: border-box;
+}
+.nav-button:hover{
+  background-color: #000;
+  border: 1px solid #fff;
+}
