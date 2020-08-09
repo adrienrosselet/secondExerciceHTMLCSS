@@ -92,22 +92,39 @@ body{
 .header-nav-a:active{
   color: #000;
 }
-.search-logo{
-  margin: -5px 13px;
-  display: inline-block;
+.header-search-div{
+  display: block;
+  position: relative;
+}
+.bag-logo{
+  margin: 0px 13px;
   overflow: visible;
 }
-.search-logo-a{
- margin: 0 auto;
- text-decoration: none;
+.search-logo{
+  margin: 0px 13px;
+  display: inline-block;
+  overflow: visible;
+  width: 48px;
+  height: 18px;
+  padding: 1px;
+  position: absolute;
+  top: -18px;
 }
-.search-logo-path{
+.bag-logo-a{
+ padding: 1px;
+ text-decoration: none;
+ position: absolute;
+ top: -10px;
+ right: 13px;
+
+}
+.bag-logo-path{
   fill: #fff;
 }
-.search-logo-a:hover .search-logo-path{
+.bag-logo-a:hover .bag-logo-path{
   fill: #c7b299;
 }
-.search-logo-a:active .search-logo-path{
+.bag-logo-a:active .bag-logo-path{
   transform: rotate(10deg);
   transform-origin: center;
   transition: 0.2s;
@@ -119,7 +136,7 @@ input[type="search"] {
   background-image: url('../img/loupe.svg');
   background-size: contain;
   background-repeat: no-repeat;
-  border: 1px solid gray;
+  border: 0px solid gray;
   background-color: transparent;
   color: #fff;
   font-size: 14px;
@@ -132,7 +149,10 @@ input[type="search"]:focus {
   width: 200px;
   margin-right: 100px;
   transition: width 1s ease-out;
-  background-position: bottom;
+  background-position: right;
+  position: absolute;
+  top: 90px;
+  border: 1px solid gray;
 }
 input[type="search"]:hover{
   background-image: url('../img/loupe2.svg');
