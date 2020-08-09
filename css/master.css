@@ -68,6 +68,9 @@ body{
   font-size: 34px;
   /*vertical-align: middle;*/
 }
+.link-logo:active{
+  transform: scale(0.8);
+}
 .img-logo{
   vertical-align: middle;
 }
@@ -92,9 +95,11 @@ body{
 .search-logo{
   margin: -5px 13px;
   display: inline-block;
+  overflow: visible;
 }
 .search-logo-a{
  margin: 0 auto;
+ text-decoration: none;
 }
 .search-logo-path{
   fill: #fff;
@@ -103,7 +108,7 @@ body{
   fill: #c7b299;
 }
 .search-logo-a:active .search-logo-path{
-  transform: rotateZ(10deg);
+  transform: rotate(10deg);
   transform-origin: center;
   transition: 0.2s;
 }
@@ -114,10 +119,11 @@ input[type="search"] {
   background-image: url('../img/loupe.svg');
   background-size: contain;
   background-repeat: no-repeat;
-  border: 0px solid gray;
+  border: 1px solid gray;
   background-color: transparent;
   color: #fff;
   font-size: 14px;
+  margin-top: 10px;
 }
 input[type="search"]::-webkit-search-cancel-button{
   -webkit-appearance:none;
@@ -126,7 +132,7 @@ input[type="search"]:focus {
   width: 200px;
   margin-right: 100px;
   transition: width 1s ease-out;
-  background-position: right;
+  background-position: bottom;
 }
 input[type="search"]:hover{
   background-image: url('../img/loupe2.svg');
@@ -221,6 +227,7 @@ input[type="search"]:hover{
   opacity: 0.5;
   box-sizing: border-box;
 }
+
 .second-div{
   width: 269px;
   text-align: center;
@@ -251,7 +258,9 @@ input[type="search"]:hover{
   border: 2px solid #d3c1ad;
   transform: scale(1.36);
 }
-
+.nav-button:active{
+  transform: scale(0.8);
+}
 .second-fig{
   width: 269px;
   text-align: center;
@@ -268,6 +277,9 @@ input[type="search"]:hover{
 }
 .second-div:hover .second-div-a::after{
   background: #c7b299;
+}
+.second-div:active{
+  transform: scale(0.8);
 }
 .second-fig-h2{
   font-family: raleway;
@@ -370,6 +382,9 @@ input[type="search"]:hover{
 .aside-button:hover{
   background-color: #111111;
 }
+.aside-button:active{
+  transform: translateY(3px);
+}
 .fourth-sec{
   text-align: center;
   padding: 80px;
@@ -405,6 +420,9 @@ input[type="search"]:hover{
   background-color: #998675;
   color: #ffffff;
 }
+.fourth-button:active{
+  transform: scale(0.8);
+}
 .fourth-vignettes{
   display: flex;
   flex-direction: row;
@@ -416,19 +434,11 @@ input[type="search"]:hover{
 .fourth-fig{
   margin: 15px;
   position: relative;
+  background-blend-mode: darken;
+  mix-blend-mode: darken;
+  background-color: rgba(17, 17, 17, 1);
 }
-.fourth-filter{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 370px;
-  height: 237px;
-  background-color: rgba(17, 17, 17, 0);
-  z-index: 1;
-}
-.fourth-fig:hover .fourth-filter{
-  background-color: rgba(17, 17, 17, 0.7);
-}
+
 .fourth-fig:hover .fourth-figcap{
   background-color: #362f2d;
 }
@@ -446,6 +456,9 @@ input[type="search"]:hover{
 }
 .fourth-fig:hover .fourth-link-lupa{
   visibility: visible;
+}
+.fourth-fig:hover .fourth-fig-img{
+  filter: opacity(0.3);
 }
 .fourth-fig-img{
   display: block;
@@ -476,6 +489,27 @@ input[type="search"]:hover{
   left: 19px;
   z-index: 2;
 }
+
+.fourth-link-icon{
+  position: absolute;
+  top: 106px;
+  left: 144px;
+  z-index: 3;
+  visibility: hidden;
+}
+.fourth-link-icon:active{
+  transform: scale(0.8);
+}
+.fourth-link-lupa{
+  position: absolute;
+  top: 106px;
+  left: 198px;
+  z-index: 3;
+  visibility: hidden;
+}
+.fourth-link-lupa:active{
+  transform: scale(0.8);
+}
 .fourth-button-bottom{
   color: #ffffff;
   font-family: raleway;
@@ -491,17 +525,6 @@ input[type="search"]:hover{
 .fourth-button-bottom:hover{
   background-color: #111111;
 }
-.fourth-link-icon{
-  position: absolute;
-  top: 106px;
-  left: 144px;
-  z-index: 3;
-  visibility: hidden;
-}
-.fourth-link-lupa{
-  position: absolute;
-  top: 106px;
-  left: 198px;
-  z-index: 3;
-  visibility: hidden;
+.fourth-button-bottom:active{
+  transform: translateY(3px);
 }
