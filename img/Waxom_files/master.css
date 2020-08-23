@@ -43,7 +43,7 @@ body{
   padding: 40px;
   background-color: rgba(17, 17, 17, 0.7);
   background-size: cover;
-  width: 100%;
+  width: 1920px;
   min-height: 1025px;
   position: relative;
   box-sizing: border-box;
@@ -904,363 +904,31 @@ input[type="search"]:hover{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  box-sizing: border-box;
 }
 .tenth-div{
-  width: 270px;
-  margin: 0 20px;
-  position: relative;
+  width: 262px;
 }
-.thenth-h2{
-  color: #ffffff;
-  font-family: raleway;
-  font-size: 24px;
-  font-weight: 700;
-  margin: 22px 0 30px 0;
+.tenth-p{
+color: #555555;
+font-family: montserrat;
+font-size: 14px;
+font-weight: 300;
+line-height: 24px;
 }
-.tenth-time{
-  color: #363636;
-  font-family: montserrat;
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 20px;
-}
-.tenth-p1{
-  color: #555555;
-  font-family: montserrat;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 24px;
-  margin: 29px 0 33px 0;
-}
-.tenth-p2{
-  color: #555555;
-  font-family: montserrat;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 24px;
-  margin: 10px 0 21px 0;
-}
-.tenth-p2-a{
-  text-decoration: none;
-  color: #00bff3;
-}
-.tenth-hr{
-  border-top: 1px solid #252525;
-  border-left: #191919;
-  border-right: #191919;
-  border-bottom: #191919;
-  margin: 20px 0;
-}
-.tenth-p4{
-  color: #555555;
-  font-family: montserrat;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 24px;
-  margin: 30px 0 11px 0;
-}
-.tenth-p2-a2{
-  color: #959595;
-}
-/* .tenth-p::after{
-  position: absolute;
-  content: '';
-  height: 3px;
-  bottom: -4px;
-  background-color: #595f6f;
-  margin: 0 auto;
-	left: 0;
-  right: 0;
-	width: 70px;
-} */
-.ninht-arti-link{
-  color: #d1d1d1;
-  font-family: montserrat;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  text-decoration: none;
-}
-.ninht-arti-link:hover{
-  color: #555;
-}
-.ninht-arti-link:active {
-  color: #111;
-}
-.ninht-arti-link:hover .eight-arti-link-path{
-  fill: #555;
-}
-.tenth-time2{
-  color: #ffffff;
-  font-family: montserrat;
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 20px;
-}
-.tenth-p3{
-  color: #c7b299;
-  font-family: montserrat;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 20px;
-}
-.tenth-div-div{
-  width: 270px;
-  height: 216px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.footer{
-  min-height: 111px;
-  background-color: #111111;
-  padding: 34px 375px;
-  box-sizing: border-box;
-}
-.footer-left{
-  float: left;
-  color: #555555;
-  font-family: Montserrat;
-  font-size: 13px;
-  font-weight: 300;
-  line-height: 20px;
-}
-.foot-wax{
-  color: #959595;
-}
-.faq{
-  color: #c7b299;
-}
-.bar{
-  color: #252525;
-}
-.footer-right{
-  float: right;
-  color: #959595;
-  font-family: Montserrat;
-  font-size: 13px;
-  font-weight: 300;
-  line-height: 20px;
-}
-.name{
-  color: #555555;
-}
-#menu-toggle{
-  display: none;
-}
-
 @media (max-width: 605px) {
-  body{
-    width: 604px;
-  }
-  .header{
-    min-height: 137px;
+  .body{
     width: 100%;
-    padding: 40px 30px;
   }
-  .header-div{
-    width: 100%;
-    justify-content: space-between;
-  }
-
   .header-nav{
-    display: grid;
-    visibility: hidden;
-    position: absolute;
-    top: 137px;
-    right: 0px;
-    background-color: #111;
-    transition-duration: .25s;
-    z-index: 1;
-  }
-  .header-search-div{
     display: none;
   }
-
+  .img-logo{
+    display: none;
+  }
   .header-nav-a{
-    font-size: 20px;
-    margin: 10px 15px;
+    color: red;
   }
   .layer{
-    background-image: url("../img/vague.jpg");
-  }
-  .header-center{
-    display: none;
-  }
-  .nav-down{
-    display: none;
-  }
-  #menu-toggle{
-    display: block;
-    visibility: hidden;
-  }
-  #menu-toggle:checked ~ .header-nav {
-    visibility: visible;
-    right: 0;
-  }
-  #menu-toggle:checked ~ .menu-phone > span {
-    transform: rotate(45deg);
-  }
-  #menu-toggle:checked ~ .menu-phone > span::before {
-    top: 0;
-    transform: rotate(0);
-  }
-  #menu-toggle:checked ~ .menu-phone > span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  .menu-phone {
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 65px;
-    height: 39px;
-    cursor: pointer;
-    z-index: 1;
-    padding: 0 20px;
-  }
-  .menu-phone > span,
-  .menu-phone > span::before,
-  .menu-phone > span::after {
-    display: block;
-    position: absolute;
-    width: 65px;
-    height: 9px;
-    background-color: #fff;
-    transition-duration: .25s;
-  }
-  .menu-phone > span::before {
-    content: '';
-    top: -15px;
-  }
-  .menu-phone > span::after {
-    content: '';
-    top: 15px;
-  }
-
-  .second-sec{
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 450px;
-  }
-  .second-div{
-    margin: 13px 13px;
-  }
-  .third-sec{
-    display: none;
-  }
-  .aside{
-    display: none;
-  }
-  .fourth-sec{
-    padding: 80px 0 0 0;
-  }
-  .fourth-button{
-    display: none;
-  }
-  .fourth-p{
-    width: 100%;
-    font-family: raleway;
-    font-size: 13px;
-  }
-  .fourth-vignettes{
-    display: none;
-  }
-  .fourth-button-bottom{
-    display: none;
-  }
-  .fifth-sec{
-    background-position: top;
-  }
-  .fifth-vid{
-    width: 605px;
-  }
-  .video-controls{
-    top: 210px;
-    left: 0;
-    width: 100%;
-  }
-  .fifth-h1{
-    font-weight: 300;
-  }
-
-  .sixth-sec{
-    min-height: 600px;
-  }
-  .sixth-img{
-    left: 45px;
-    width: 240px;
-    height: 350px;
-  }
-  .sixth-div {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 50px;
-  }
-  .sixth-h2{
-    margin: 0 0 20px 0;
-    text-align: center;
-    font-weight: 500;
-  }
-  .sixth-p{
-    font-family: raleway;
-    font-size: 14px;
-    padding: 0 30px;
-  }
-  .sixth-li{
-    padding-left: 285px;
-  }
-  .sixth-li-ele{
-    font-family: raleway;
-    font-size: 10px;
-  }
-  .seventh-sec{
-    display: none;
-  }
-  .eigth-sec{
-    padding: 35px;
-  }
-  .eight-div{
-    flex-direction: column;
-  }
-  .eight-p{
-    width: 100%;
-    font-family: raleway;
-    font-size: 13px;
-  }
-  .eight-arti{
-    margin: 15px auto;
-  }
-  .eight-arrow{
-    display: none;
-  }
-  .ninth-sec{
-    min-height: 154px;
-    position: relative;
-  }
-  .ninth-background{
-    width: 605px;
-    height: 154px;
-  }
-  .ninth-barber-logo{
-    transform: scale(0.4);
-    margin: auto -40px;
-  }
-  .tenth-sec{
-    display: none;
-  }
-  .footer{
-    padding: 1px;
-    text-align: center;
-  }
-  .footer-left{
-    float: none;
-    margin-bottom: 30px;
-  }
-  .footer-right{
-    float: none;
-    margin-bottom: 30px;
+    background-image: url("");
   }
 }
