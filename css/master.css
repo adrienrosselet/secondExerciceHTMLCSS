@@ -477,6 +477,9 @@ input[type="search"]:hover{
 .fourth-fig:hover .fourth-figcap-arrow-path{
   fill: #362f2d;
 }
+.fourth-figcap-arrow-path{
+  fill: #fbfaf8;
+}
 .fourth-fig:hover .fourth-link-icon{
   visibility: visible;
 }
@@ -699,6 +702,8 @@ input[type="search"]:hover{
   font-weight: 200;
   line-height: 36px;
   margin-bottom: 21px;
+  margin-top: 38px;
+  display: block;
 }
 .seventh-span2{
   color: #c7b299;
@@ -810,6 +815,20 @@ input[type="search"]:hover{
 .eight-arti-link-arrow{
   margin-left: 9px;
 }
+.eight-arti-div{
+  width: 50px;
+  height: 60px;
+  border-radius: 3px 3px 0 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: #ffffff;
+  font-family: montserrat;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 39px;
+  text-align: center;
+}
 .eight-arti-div-number{
   width: 50px;
   height: 35px;
@@ -889,6 +908,11 @@ input[type="search"]:hover{
   flex-direction: row;
   justify-content: center;
 }
+.ninth-sec-link{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .ninth-background{
   filter: opacity(0.3);
   position: absolute;
@@ -925,6 +949,27 @@ input[type="search"]:hover{
   font-weight: 300;
   line-height: 20px;
 }
+.tenth-time-underscore{
+  color: #363636;
+  font-family: montserrat;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 30px;
+  position: relative;
+}
+.tenth-time-underscore::after{
+  content: '';
+  height: 2px;
+  background: #252525;
+  position: absolute;
+  content: '';
+  height: 2px;
+  bottom: -22px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 270px;
+}
 .tenth-p1{
   color: #555555;
   font-family: montserrat;
@@ -939,11 +984,25 @@ input[type="search"]:hover{
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
-  margin: 10px 0 21px 0;
+  margin: 10px 0 43px 0;
+  position: relative;
 }
 .tenth-p2-a{
   text-decoration: none;
   color: #00bff3;
+}
+.tenth-p2:first-of-type::after{
+  content: '';
+  height: 2px;
+  background: #252525;
+  position: absolute;
+  content: '';
+  height: 2px;
+	bottom: -22px;
+  margin: 0 auto;
+	left: 0;
+  right: 0;
+	width: 100%;
 }
 .tenth-hr{
   border-top: 1px solid #252525;
@@ -963,17 +1022,7 @@ input[type="search"]:hover{
 .tenth-p2-a2{
   color: #959595;
 }
-/* .tenth-p::after{
-  position: absolute;
-  content: '';
-  height: 3px;
-  bottom: -4px;
-  background-color: #595f6f;
-  margin: 0 auto;
-	left: 0;
-  right: 0;
-	width: 70px;
-} */
+
 .ninht-arti-link{
   color: #d1d1d1;
   font-family: montserrat;
@@ -1004,6 +1053,21 @@ input[type="search"]:hover{
   font-size: 14px;
   font-weight: 300;
   line-height: 20px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.tenth-p3::after{
+  content: '';
+  height: 2px;
+  background: #252525;
+  position: absolute;
+  content: '';
+  height: 2px;
+	bottom: -22px;
+  margin: 0 auto;
+	left: 0;
+  right: 0;
+	width: 100%;
 }
 .tenth-div-div{
   width: 270px;
@@ -1011,6 +1075,9 @@ input[type="search"]:hover{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+.tenth-div-div-img:hover{
+  filter: opacity(0.3);
 }
 .footer{
   min-height: 111px;
@@ -1050,14 +1117,14 @@ input[type="search"]:hover{
   display: none;
 }
 
-@media (max-width: 605px) {
+@media (max-width: 576px) {
   body{
-    width: 604px;
+    width: 100%;
   }
   .header{
     min-height: 137px;
     width: 100%;
-    padding: 40px 30px;
+    /* padding: 40px 30px; */
   }
   .header-div{
     width: 100%;
@@ -1077,7 +1144,10 @@ input[type="search"]:hover{
   .header-search-div{
     display: none;
   }
-
+  .header-nav{
+    width: 100%;
+    text-align: center;
+  }
   .header-nav-a{
     font-size: 20px;
     margin: 10px 15px;
@@ -1141,11 +1211,12 @@ input[type="search"]:hover{
 
   .second-sec{
     flex-wrap: wrap;
-    flex-direction: column;
-    height: 450px;
+    /* flex-direction: column; */
+    min-height: 450px;
   }
   .second-div{
     margin: 13px 13px;
+    width: 230px;
   }
   .third-sec{
     display: none;
@@ -1174,7 +1245,7 @@ input[type="search"]:hover{
     background-position: top;
   }
   .fifth-vid{
-    width: 605px;
+    width: 100%;
   }
   .video-controls{
     top: 210px;
@@ -1241,7 +1312,7 @@ input[type="search"]:hover{
     position: relative;
   }
   .ninth-background{
-    width: 605px;
+    width: 100%;
     height: 154px;
   }
   .ninth-barber-logo{
